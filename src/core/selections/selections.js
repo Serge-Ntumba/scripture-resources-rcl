@@ -3,6 +3,24 @@ import _ from 'lodash';
 import { tokenize } from 'string-punctuation-tokenizer';
 import { verseObjectsToString } from './verseObjects';
 
+export const alignedSelectionsFromGreekSelectionsAndGLStuff = ({
+  selections: greekSelections,
+  verseObjects: alignedVerseObjects,
+}) => {
+  // filter through flattened? alignedVerseObjects and return verseObjects that are aligned to the greekSelections.
+  return alignedSelections;
+};
+
+// {book: 'tit', chapter: 1, verse: 1, quote: 'Θεοῦ', occurrence: -1, [{   'text': 'Θεοῦ', 'occurrence': 1, 'occurrences': 2, }, {   'text': 'Θεοῦ', 'occurrence': 2, 'occurrences': 2, }]
+
+export const alignedQuoteFromGreekSelectionsAndVerseObjects = ({
+  selections: greekSelections,
+  verseObjects: alignedVerseObjects,
+}) => {
+  // loop through flattened? alignedVerseObjects  and build the string for alignedQuote, insert elipsis if gap in sequence.
+  return alignedQuote;
+};
+
 export const selectionsFromQuoteAndVerseObjects = ({
   quote,
   verseObjects,
